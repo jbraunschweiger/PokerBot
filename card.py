@@ -1,12 +1,12 @@
 class Card:
     suits = ["H","C","D","S"]
     ranks = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
-    def __init__(self, suit, rank):
+    def __init__(self, rank, suit):
         try:
-            self.suit = suits.index(suit)
-            self.rank = ranks.index(ranks)
+            self.suit = self.suits.index(suit)
+            self.rank = self.ranks.index(rank)
         except:
-            raise Exception("invalid suit or value")
+            raise Exception()
 
     def toString(self):
-        print(suits[self.suit] + ranks[self.rank])
+        return self.ranks[self.rank] + self.suits[self.suit]
