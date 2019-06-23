@@ -1,4 +1,4 @@
 from card import Card
 
-card = Card("H","A")
+card = Card("A", "H")
 print(card.toString())
